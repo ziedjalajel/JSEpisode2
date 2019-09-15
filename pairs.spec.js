@@ -48,7 +48,6 @@ describe("pairs()", () => {
   test("can handle an odd number of names, the last array contains only one name", () => {
     let names = ["asis", "hamsa", "fawas", "mishmish", "hussein"];
     let result = pairs(names);
-    let last = result.pop();
-    expect(last.length).toBe(1);
+    expect(result.filter(pair => pair.length === 1).length).toBe(1);
   });
 });
