@@ -9,6 +9,6 @@
     "jest": "^23.4.1"
   },
   "scripts": {
-    "test": "CI=true jest --watch"
+    "test": "CI=true jest"
   }
 }
