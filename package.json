@@ -12,6 +12,6 @@
     "test": "CI=true jest"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.12.11"
+    "@babel/preset-env": "^7.14.2"
   }
 }
