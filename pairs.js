@@ -38,10 +38,22 @@ Array.prototype.getRandom = function () {
 
 function pairs(names) {
   // Your code goes here
-}
+  var j, x, i,l = 0;
+    for (i = names.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = names[i];
+        names[i] = names[j];
+        names[j] = x;
+        l < names.length
+        
+}return names
 
+}
+//console.log(pairs(['Asis', 'Hamsa', 'Fawas', 'Mishmish', 'Hussein']))
+
+
+console.log(pairs(['Asis', 'Hamsa', 'Fawas', 'Mishmish', 'Hussein']))
 module.exports = pairs;
 
-console.log(
-  pairs(["Asis", "Hamsa", "Fawas", "Mishmish", "Hussein", "Lailz", "Mr Potato"])
-);
+//console.log(pairs(["Asis", "Hamsa", "Fawas", "Mishmish", "Hussein", "Lailz", "Mr Potato"])
+
